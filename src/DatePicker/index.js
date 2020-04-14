@@ -10,11 +10,7 @@ class DatePicker extends Component{
         this.state = {
             fetchedDate: null,
             timersList: temp,
-        }   
-
-// console.log('====================================');
-// console.log(this.state);
-// console.log('====================================');
+        }
     }
 
     onTimerFinish(targetTime){

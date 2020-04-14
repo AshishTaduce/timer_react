@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import './style.css'
 
 class TimerButton extends Component {
+    a = 0;
     constructor(props) {
         super(props);
         let current = new Date();
@@ -17,14 +18,15 @@ class TimerButton extends Component {
         }
     }
 
-    componentDidMount() {setInterval(() => this.timer(), 1000)};
+    componentDidMount() {this.a = setInterval(() => this.timer(), 1000)};
 
     componentWillUnmount(){
-
+        clearInterval(this.a);
     }
 
     timer() {
         if(Math.round((this.props.time.getTime() - Date.now()) / 1000) === 0.00){
+            alert(`Timer finished of target time ${this.state.days}:${this.state.hours}:${this.state.minutes}:${this.state.seconds}`);
             this.props.onFinish(this.props.time);
         }
         let current = new Date();
@@ -49,11 +51,6 @@ class TimerButton extends Component {
                 </div>
             );
         }
-        // else {
-        //     if(Math.round((this.props.time.getTime() - Date.now()) / 1000) === 1.00) alert('Timer of ' + this.props.time + ' has been finished.');
-        //     return null;
-        // }
-    // }
 }
 
 export default TimerButton;
