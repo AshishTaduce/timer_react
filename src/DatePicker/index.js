@@ -8,13 +8,15 @@ class DatePicker extends Component{
         super(props);
         this.state = {
             fetchedDate: null,
-            timersList: [<div>List of Timers</div>],
+            timersList: [],
         }
     }
 
     onTimerFinish(targetTime){
         let temp = this.state.timersList.slice();
         temp.splice(temp.indexOf(targetTime), 1);
+        temp.filter((e, i, a) => e !== targetTime);
+        alert(`Timer finished of target time ${targetTime}`);
         // console.log(temp);
         this.setState( {
                 timersList: temp,
@@ -22,9 +24,6 @@ class DatePicker extends Component{
     }
 
     updateTimersList(){
-        console.log('====================================');
-        console.log('hum yaha naye hai', this.state);
-        console.log('====================================');
         let temp = this.state.timersList.slice();
         temp.push(this.state.fetchedDate);
         this.setState({
@@ -50,13 +49,13 @@ class DatePicker extends Component{
                                this.handleDate(newDateEvent)}/>
                      <button onClick={()=> this.updateTimersList()}>Submit</button>
                 </div>
-
+                <div>List of Timers</div>
                 <div className="timers-list">
                     {
                         this.state.timersList !== undefined ? this.state.timersList.map((dateValue, index) => {
                         if(index !== 0)
                             return (
-                                <TimerButton targetTime= {new Date(dateValue)} onFinish = {this.onTimerFinish.bind(this)}/>
+                                <TimerButton key = {Math.random(1000)} targetTime= {new Date(dateValue)} onFinish = {this.onTimerFinish.bind(this)}/>
                                 );
                         else return dateValue
                     }):null}

@@ -29,7 +29,7 @@ class TimerButton extends Component {
     timer() {
         if(Math.round((this.props.targetTime.getTime() - Date.now()) / 1000) === 1.00){
             clearInterval(this.a);
-            alert(`Timer finished of target time ${this.props.targetTime}`);
+
             this.props.onFinish(this.props.targetTime);
             return;
         }
