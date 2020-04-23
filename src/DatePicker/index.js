@@ -6,19 +6,14 @@ class DatePicker extends Component{
 
     constructor(props) {
         super(props);
-        let temp = [<div>List of Timers</div>];
         this.state = {
             fetchedDate: null,
-            timersList: temp,
+            timersList: [<div>List of Timers</div>],
         }
     }
 
     onTimerFinish(targetTime){
-        // console.log('====================================');
-        // console.log('hum yaha hai',targetTime, this.state);
-        // console.log('====================================');
         let temp = this.state.timersList.slice();
-    
         temp.splice(temp.indexOf(targetTime), 1);
         // console.log(temp);
         this.setState( {
@@ -58,10 +53,12 @@ class DatePicker extends Component{
 
                 <div className="timers-list">
                     {
-                        this.state.timersList !== undefined ? this.state.timersList.map((x) => {
-                        return (
-                                <TimerButton time = {new Date(x)} onFinish = {this.onTimerFinish.bind(this)}/>
+                        this.state.timersList !== undefined ? this.state.timersList.map((dateValue, index) => {
+                        if(index !== 0)
+                            return (
+                                <TimerButton targetTime= {new Date(dateValue)} onFinish = {this.onTimerFinish.bind(this)}/>
                                 );
+                        else return dateValue
                     }):null}
                 </div>
             </div>
