@@ -5,17 +5,23 @@ class TimerButton extends Component {
     a = 0;
     constructor(props) {
         super(props);
+        this.state = {
+            currentTime: this.calculateCurrentTime(),
+        }
+    }
+
+    calculateCurrentTime(){
         let current = new Date();
         let oneHour = 60 * 60 * 1000;
         let oneMin = 60 * 1000;
         let oneDay = 24 * 60 * 60 * 1000;
-        console.log(this.props);
-        this.state = {
-            days: (Math.floor(Math.abs(current - this.props.targetTime) / oneDay)),
-            hours: (Math.floor(Math.abs(current - this.props.targetTime ) / oneHour)% 24),
-            minutes: (Math.floor((Math.abs(current - this.props.targetTime ) / oneMin) % 60)),
-            seconds: (Math.floor((Math.abs(current - this.props.targetTime) / 1000) % 60)),
-        }
+        let days=(Math.floor(Math.abs(current - this.props.targetTime) / oneDay));
+        let hours=(Math.floor(Math.abs(current - this.props.targetTime ) / oneHour)% 24);
+        let minutes=(Math.floor((Math.abs(current - this.props.targetTime ) / oneMin) % 60));
+        let seconds= (Math.floor((Math.abs(current - this.props.targetTime) / 1000) % 60));
+        this.setState({
+            currentTime: (`${days} days ${hours} hours ${minutes} minute ${seconds} seconds`),
+        });
     }
 
     componentDidMount() {this.a = setInterval(() => {
@@ -29,29 +35,17 @@ class TimerButton extends Component {
     timer() {
         if(Math.round((this.props.targetTime.getTime() - Date.now()) / 1000) === 1.00){
             clearInterval(this.a);
-            alert(`Timer finished of target time ${this.props.targetTime}`);
             this.props.onFinish(this.props.targetTime);
             return;
         }
-        let current = new Date();
-        let oneDay = 24 * 60 * 60 * 1000;
-        let oneHour = 60 * 60 * 1000;
-        let oneMin = 60 * 1000;
-        // console.log(this.props.time.getTime() - Date.now());
-        // console.log(Math.round((this.props.time.getTime() - Date.now()) / 1000) === 0.00);
-        this.setState({
-            days: (Math.floor(Math.abs(current - this.props.targetTime) / oneDay)),
-            hours: (Math.floor(Math.abs(current - this.props.targetTime ) / oneHour)% 24),
-            minutes: (Math.floor((Math.abs(current - this.props.targetTime ) / oneMin) % 60)),
-            seconds: (Math.floor((Math.abs(current - this.props.targetTime) / 1000) % 60)),
-        });
+        this.calculateCurrentTime();
     }
 
     render() {
         // if(Math.round((this.props.time.getTime() - Date.now()) / 1000) >= 1.00){
             return (
                 <div className='timer' key = {Math.random()}>
-                    {this.state.days}:{this.state.hours}:{this.state.minutes}:{this.state.seconds}
+                    {this.state.currentTime}
                 </div>
             );
         }

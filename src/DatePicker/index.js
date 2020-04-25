@@ -15,16 +15,13 @@ class DatePicker extends Component{
     onTimerFinish(targetTime){
         let temp = this.state.timersList.slice();
         temp.splice(temp.indexOf(targetTime), 1);
-        // console.log(temp);
         this.setState( {
                 timersList: temp,
             });
+        alert(`Timer finished of target time ${targetTime}`);
     }
 
-    updateTimersList(){
-        console.log('====================================');
-        console.log('hum yaha naye hai', this.state);
-        console.log('====================================');
+    addToTimerList(){
         let temp = this.state.timersList.slice();
         temp.push(this.state.fetchedDate);
         this.setState({
@@ -34,7 +31,6 @@ class DatePicker extends Component{
     }
 
     handleDate(date){
-        console.log(date.target.value);
         this.setState({
             fetchedDate: date.target.value,
             }
@@ -48,7 +44,7 @@ class DatePicker extends Component{
                     <input type="datetime-local" id={'picker'}
                            onChange={(newDateEvent) =>
                                this.handleDate(newDateEvent)}/>
-                     <button onClick={()=> this.updateTimersList()}>Submit</button>
+                     <button onClick={()=> this.addToTimerList()}>Submit</button>
                 </div>
 
                 <div className="timers-list">

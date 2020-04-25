@@ -21,6 +21,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="ProjectId" id="1ZyYxP88ZPACJoE8xEQAqSMmB0c" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -113,29 +114,44 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1579" height="109" key="GridCell.Tab.0.bottom" timestamp="1587615077519">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1587852218279">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="826" height="81" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587308825962" />
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1587852218279" />
+    <state width="1345" height="81" key="GridCell.Tab.0.bottom" timestamp="1587852350552">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="81" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587852350552" />
     <state width="1579" height="109" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.208.1366.728@0.0.1600.860" timestamp="1587615077519" />
     <state width="1579" height="110" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1586762156742" />
-    <state width="1579" height="109" key="GridCell.Tab.0.center" timestamp="1587615077519">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state width="1345" height="81" key="GridCell.Tab.0.center" timestamp="1587852350552">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="826" height="81" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587308825962" />
+    <state width="1345" height="81" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587852350552" />
     <state width="1579" height="109" key="GridCell.Tab.0.center/0.0.1600.860/1600.208.1366.728@0.0.1600.860" timestamp="1587615077519" />
     <state width="1579" height="110" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1586762156742" />
-    <state width="1579" height="109" key="GridCell.Tab.0.left" timestamp="1587615077518">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state width="1345" height="81" key="GridCell.Tab.0.left" timestamp="1587852350552">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="826" height="81" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587308825962" />
+    <state width="1345" height="81" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587852350552" />
     <state width="1579" height="109" key="GridCell.Tab.0.left/0.0.1600.860/1600.208.1366.728@0.0.1600.860" timestamp="1587615077518" />
     <state width="1579" height="110" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1586762156742" />
-    <state width="1579" height="109" key="GridCell.Tab.0.right" timestamp="1587615077519">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state width="1345" height="81" key="GridCell.Tab.0.right" timestamp="1587852350552">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="826" height="81" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587308825962" />
+    <state width="1345" height="81" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587852350552" />
     <state width="1579" height="109" key="GridCell.Tab.0.right/0.0.1600.860/1600.208.1366.728@0.0.1600.860" timestamp="1587615077519" />
     <state width="1579" height="110" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1586762156742" />
     <state x="0" y="74" key="SettingsEditor" timestamp="1585813925954">
@@ -146,6 +162,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="0" y="159" key="Vcs.Push.Dialog.v2/0.0.1600.860/1600.208.1366.728@0.0.1600.860" timestamp="1586619097444" />
+    <state x="454" y="16" key="VcsDiffUtil.ChangesDialog" timestamp="1587852216460">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="454" y="16" key="VcsDiffUtil.ChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1587852216460" />
     <state x="1" y="164" key="run.anything.popup" timestamp="1586243425889">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
