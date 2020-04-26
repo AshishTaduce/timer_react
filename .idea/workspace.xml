@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f0362498-ed04-4042-bf01-0d20a71c3b9e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DatePicker/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/DatePicker/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TimerButton/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/TimerButton/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +107,17 @@
       <workItem from="1587310038655" duration="599000" />
       <workItem from="1587311929078" duration="229000" />
       <workItem from="1587614739691" duration="1995000" />
+      <workItem from="1587853167631" duration="885000" />
+      <workItem from="1587881167312" duration="76000" />
     </task>
+    <task id="LOCAL-00001" summary="Implemented quality feedback">
+      <created>1587853309189</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587853309189</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,13 +128,23 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Implemented quality feedback" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented quality feedback" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1587853307984">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1587853307984" />
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1587852218279">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -154,22 +173,31 @@
     <state width="1345" height="81" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587852350552" />
     <state width="1579" height="109" key="GridCell.Tab.0.right/0.0.1600.860/1600.208.1366.728@0.0.1600.860" timestamp="1587615077519" />
     <state width="1579" height="110" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1586762156742" />
+    <state x="129" y="60" key="MergeDialog" timestamp="1587853355323">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="129" y="60" key="MergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1587853355323" />
+    <state x="387" y="71" key="MultipleFileMergeDialog" timestamp="1587853358984">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="387" y="71" key="MultipleFileMergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1587853358984" />
     <state x="0" y="74" key="SettingsEditor" timestamp="1585813925954">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="0" y="74" key="SettingsEditor/0.0.1600.860/1600.208.1366.728@0.0.1600.860" timestamp="1585813925954" />
-    <state x="0" y="159" key="Vcs.Push.Dialog.v2" timestamp="1586619097444">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state x="0" y="135" key="Vcs.Push.Dialog.v2" timestamp="1587853383430">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="0" y="135" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1587853383430" />
     <state x="0" y="159" key="Vcs.Push.Dialog.v2/0.0.1600.860/1600.208.1366.728@0.0.1600.860" timestamp="1586619097444" />
     <state x="454" y="16" key="VcsDiffUtil.ChangesDialog" timestamp="1587852216460">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="454" y="16" key="VcsDiffUtil.ChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1587852216460" />
-    <state x="1" y="164" key="run.anything.popup" timestamp="1586243425889">
+    <state x="1" y="164" key="run.anything.popup" timestamp="1587853402214">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="1" y="164" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1586243425889" />
+    <state x="1" y="164" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1587853402214" />
     <state x="70" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1586255940141">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

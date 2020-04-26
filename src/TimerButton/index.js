@@ -42,7 +42,6 @@ class TimerButton extends Component {
     }
 
     render() {
-        // if(Math.round((this.props.time.getTime() - Date.now()) / 1000) >= 1.00){
             return (
                 <div className='timer' key = {Math.random()}>
                     {this.state.currentTime}
