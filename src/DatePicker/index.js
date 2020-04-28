@@ -22,7 +22,7 @@ class DatePicker extends Component{
         this.setState( {
                 timersList: temp,
             });
-        alert(`Timer finished of target time ${targetTime}`);
+        alert(`Timer finished of target time ${new Date(targetTime)}`);
     }
 
     addToTimerList(){

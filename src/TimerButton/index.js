@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import './style.css'
 
 class TimerButton extends Component {
-    a = 0;
+    setInterval = 0;
     targetTime = new Date(this.props.targetTime);
     constructor(props) {
         super(props);
@@ -25,17 +25,17 @@ class TimerButton extends Component {
         });
     }
 
-    componentDidMount() {this.a = setInterval(() => {
+    componentDidMount() {this.setInterval = setInterval(() => {
         this.timer();
     }, 300)};
 
     componentWillUnmount(){
-        // clearInterval(this.a);
+        this.setInterval = null;
     }
 
     timer() {
         if(Math.round((this.targetTime.getTime() - Date.now()) / 1000) === 0.00){
-            clearInterval(this.a);
+            clearInterval(this.setInterval);
             this.props.onFinish(this.props.targetTime);
             return;
         }

@@ -120,7 +120,7 @@
       <workItem from="1588050570051" duration="1770000" />
       <workItem from="1588052470045" duration="1913000" />
       <workItem from="1588054406880" duration="1452000" />
-      <workItem from="1588057364692" duration="832000" />
+      <workItem from="1588057364692" duration="1227000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented quality feedback">
       <created>1587853309189</created>
@@ -136,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587924494914</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Multiple timers handled">
+      <created>1588058254501</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1588058254501</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,13 +164,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Implemented quality feedback" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented quality feedback" />
+    <MESSAGE value="Multiple timers handled" />
+    <option name="LAST_COMMIT_MESSAGE" value="Multiple timers handled" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1587924493305">
+    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1588058252725">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1587924493305" />
+    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1588058252725" />
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1588051485216">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
