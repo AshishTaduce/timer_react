@@ -3,10 +3,11 @@ import './style.css'
 
 class TimerButton extends Component {
     a = 0;
+    targetTime = new Date(this.props.targetTime);
     constructor(props) {
         super(props);
         this.state = {
-            currentTime: this.calculateCurrentTime(),
+            currentTime: 'Starting Timer',
         }
     }
 
@@ -15,10 +16,10 @@ class TimerButton extends Component {
         let oneHour = 60 * 60 * 1000;
         let oneMin = 60 * 1000;
         let oneDay = 24 * 60 * 60 * 1000;
-        let days=(Math.floor(Math.abs(current - this.props.targetTime) / oneDay));
-        let hours=(Math.floor(Math.abs(current - this.props.targetTime ) / oneHour)% 24);
-        let minutes=(Math.floor((Math.abs(current - this.props.targetTime ) / oneMin) % 60));
-        let seconds= (Math.floor((Math.abs(current - this.props.targetTime) / 1000) % 60));
+        let days=(Math.floor(Math.abs(current - this.targetTime) / oneDay));
+        let hours=(Math.floor(Math.abs(current - this.targetTime ) / oneHour)% 24);
+        let minutes=(Math.floor((Math.abs(current - this.targetTime ) / oneMin) % 60));
+        let seconds= (Math.floor((Math.abs(current - this.targetTime) / 1000) % 60));
         this.setState({
             currentTime: (`${days} days ${hours} hours ${minutes} minute ${seconds} seconds`),
         });
@@ -26,14 +27,14 @@ class TimerButton extends Component {
 
     componentDidMount() {this.a = setInterval(() => {
         this.timer();
-    }, 1000)};
+    }, 300)};
 
     componentWillUnmount(){
-        clearInterval(this.a);
+        // clearInterval(this.a);
     }
 
     timer() {
-        if(Math.round((this.props.targetTime.getTime() - Date.now()) / 1000) === 1.00){
+        if(Math.round((this.targetTime.getTime() - Date.now()) / 1000) === 0.00){
             clearInterval(this.a);
             this.props.onFinish(this.props.targetTime);
             return;

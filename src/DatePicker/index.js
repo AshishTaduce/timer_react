@@ -6,15 +6,19 @@ class DatePicker extends Component{
 
     constructor(props) {
         super(props);
+        this.fetchedDate= null;
         this.state = {
-            fetchedDate: null,
-            timersList: [<div>List of Timers</div>],
+
+            timersList: [],
         }
     }
 
     onTimerFinish(targetTime){
         let temp = this.state.timersList.slice();
-        temp.splice(temp.indexOf(targetTime), 1);
+        console.log('Target is: ',targetTime);
+        console.log('List is: ',temp);
+        temp = temp.filter(e => e !== targetTime);
+        console.log('New temp: ' ,temp);
         this.setState( {
                 timersList: temp,
             });
@@ -23,7 +27,7 @@ class DatePicker extends Component{
 
     addToTimerList(){
         let temp = this.state.timersList.slice();
-        temp.push(this.state.fetchedDate);
+        temp.push(this.fetchedDate);
         this.setState({
                 timersList: temp,
             }
@@ -31,10 +35,9 @@ class DatePicker extends Component{
     }
 
     handleDate(date){
-        this.setState({
-            fetchedDate: date.target.value,
-            }
-        );
+
+            this.fetchedDate= new Date(date.target.value).getTime();
+
     }
 
     render() {
@@ -46,16 +49,14 @@ class DatePicker extends Component{
                                this.handleDate(newDateEvent)}/>
                      <button onClick={()=> this.addToTimerList()}>Submit</button>
                 </div>
-
+                <div>List of Timers</div>
                 <div className="timers-list">
                     {
-                        this.state.timersList !== undefined ? this.state.timersList.map((dateValue, index) => {
-                        if(index !== 0)
+                        this.state.timersList.map((dateValue, index) => {
                             return (
-                                <TimerButton targetTime= {new Date(dateValue)} onFinish = {this.onTimerFinish.bind(this)}/>
+                                <TimerButton  key = {dateValue} targetTime= {dateValue} onFinish = {this.onTimerFinish.bind(this)}/>
                                 );
-                        else return dateValue
-                    }):null}
+                    })}
                 </div>
             </div>
         );
