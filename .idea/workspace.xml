@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0362498-ed04-4042-bf01-0d20a71c3b9e" name="Default Changelist" comment="">
+    <list default="true" id="f0362498-ed04-4042-bf01-0d20a71c3b9e" name="Default Changelist" comment="Minor changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DatePicker/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/DatePicker/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TimerButton/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/TimerButton/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,14 +26,14 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/l/postersReactJS-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -120,7 +119,10 @@
       <workItem from="1588050570051" duration="1770000" />
       <workItem from="1588052470045" duration="1913000" />
       <workItem from="1588054406880" duration="1452000" />
-      <workItem from="1588057364692" duration="1227000" />
+      <workItem from="1588057364692" duration="1487000" />
+      <workItem from="1588079227871" duration="1158000" />
+      <workItem from="1588083518870" duration="23000" />
+      <workItem from="1588227351774" duration="1226000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented quality feedback">
       <created>1587853309189</created>
@@ -143,35 +145,43 @@
       <option name="project" value="LOCAL" />
       <updated>1588058254501</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Minor changes">
+      <created>1588058691153</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1588058691153</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Implemented quality feedback" />
     <MESSAGE value="Multiple timers handled" />
-    <option name="LAST_COMMIT_MESSAGE" value="Multiple timers handled" />
+    <MESSAGE value="Minor changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor changes" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1588058252725">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="358" y="0" key="CommitChangelistDialog2" timestamp="1588227636777">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1588058252725" />
+    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1588079257554" />
+    <state x="358" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1588227636777" />
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1588051485216">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -180,28 +190,28 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="142" y="123" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1588045612547" />
-    <state width="944" height="106" key="GridCell.Tab.0.bottom" timestamp="1588057593852">
+    <state width="944" height="106" key="GridCell.Tab.0.bottom" timestamp="1588058885976">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="944" height="106" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588057593852" />
+    <state width="944" height="106" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588058885976" />
     <state width="1579" height="109" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.208.1366.728@0.0.1600.860" timestamp="1587615077519" />
     <state width="1579" height="110" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1586762156742" />
-    <state width="944" height="106" key="GridCell.Tab.0.center" timestamp="1588057593852">
+    <state width="944" height="106" key="GridCell.Tab.0.center" timestamp="1588058885976">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="944" height="106" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588057593852" />
+    <state width="944" height="106" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588058885976" />
     <state width="1579" height="109" key="GridCell.Tab.0.center/0.0.1600.860/1600.208.1366.728@0.0.1600.860" timestamp="1587615077519" />
     <state width="1579" height="110" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1586762156742" />
-    <state width="944" height="106" key="GridCell.Tab.0.left" timestamp="1588057593851">
+    <state width="944" height="106" key="GridCell.Tab.0.left" timestamp="1588058885976">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="944" height="106" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588057593851" />
+    <state width="944" height="106" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588058885976" />
     <state width="1579" height="109" key="GridCell.Tab.0.left/0.0.1600.860/1600.208.1366.728@0.0.1600.860" timestamp="1587615077518" />
     <state width="1579" height="110" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1586762156742" />
-    <state width="944" height="106" key="GridCell.Tab.0.right" timestamp="1588057593852">
+    <state width="944" height="106" key="GridCell.Tab.0.right" timestamp="1588058885976">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="944" height="106" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588057593852" />
+    <state width="944" height="106" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588058885976" />
     <state width="1579" height="109" key="GridCell.Tab.0.right/0.0.1600.860/1600.208.1366.728@0.0.1600.860" timestamp="1587615077519" />
     <state width="1579" height="110" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1586762156742" />
     <state x="129" y="60" key="MergeDialog" timestamp="1587853355323">
@@ -220,11 +230,12 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="253" y="0" key="VCS.ChangeListViewerDialog/0.0.1366.728@0.0.1366.728" timestamp="1588051478408" />
-    <state x="0" y="135" key="Vcs.Push.Dialog.v2" timestamp="1587924500257">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="0" y="159" key="Vcs.Push.Dialog.v2" timestamp="1588227626605">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="0" y="135" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1587924500257" />
+    <state x="0" y="135" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1588079735315" />
     <state x="0" y="159" key="Vcs.Push.Dialog.v2/0.0.1600.860/1600.208.1366.728@0.0.1600.860" timestamp="1586619097444" />
+    <state x="0" y="159" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1588227626605" />
     <state x="454" y="16" key="VcsDiffUtil.ChangesDialog" timestamp="1587852216460">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

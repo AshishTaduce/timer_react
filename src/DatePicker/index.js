@@ -15,10 +15,10 @@ class DatePicker extends Component{
 
     onTimerFinish(targetTime){
         let temp = this.state.timersList.slice();
-        console.log('Target is: ',targetTime);
-        console.log('List is: ',temp);
+        // console.log('Target is: ',targetTime);
+        // console.log('List is: ',temp);
         temp = temp.filter(e => e !== targetTime);
-        console.log('New temp: ' ,temp);
+        // console.log('New temp: ' ,temp);
         this.setState( {
                 timersList: temp,
             });
@@ -54,7 +54,7 @@ class DatePicker extends Component{
                     {
                         this.state.timersList.map((dateValue, index) => {
                             return (
-                                <TimerButton  key = {dateValue} targetTime= {dateValue} onFinish = {this.onTimerFinish.bind(this)}/>
+                                <TimerButton  key = {dateValue.toString() + index.toString()} targetTime= {dateValue} onFinish = {this.onTimerFinish.bind(this)}/>
                                 );
                     })}
                 </div>
